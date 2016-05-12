@@ -1,0 +1,23 @@
+该web项目主要由LOTS，SCIPI，PARAMETERS,NUM. FICHIER, NUM. DOSSIER/COLIS 五个部分组成。
+LOTS包含PGM LOTS，PGM EMB，PREVISIONS LOTS， Calendar等的管理。
+SCIPI包含DOSSIER, PRODUITS, EXPEDITION, PREPARATION EMBALLAGE等的管理。
+PARAMETERS部分管理许多表里面要用到的参数。
+NUM. FICHIER部分包含 FICHIER的 CURD操作以及COPY。
+NUM. DOSSIER/COLIS包含 DOSSIER，关联的COLIS 的CRUD操作。
+项目主要是用Struts1来实现开发，数据访问是借助OJB来实现，前端页面用的是客户提供的ECW框架来实现页面样式布局。
+
+个人主要完成了LOTS中的 PGM LOTS和 PREVISIONS LOTS部分， 实现他们的CRUD和COPY操作。
+
+orcale to_timestamp('mm-dd-yy')
+DB2 	timestamp('2014-01-08 23:59:00.0')
+
+GLOBE
+该web项目包含 period，Hebdo，Suivi， Pilotage，Execution等多个部分组成。前面4个部分都可以管理各种的内容，Execution可以对所有内容进行批操作。
+
+本人主要负责Suivi模块中order相关的内容以及Pilotage中Droits部分。 order的CRUD操作， 发送给supply后会对应的生成orderSuivi，并且会有orderSuiviHistory记录整个过程中的数据。 Droits则可以给用户分配访问本应用的权限。项目主要用Struts框架实现结构上的分层和跳转，数据访问则是借助OJB来实现，前端页面使用客户封装过后的Globe标签库来实现页面样式布局。
+
+
+Amadeus
+该项目分成web和batch两大模块。batch端主要定时清理符合某种条件下的表里面的内容，完成对某些内容的批量操作。Web端包含Incident，Sup，Dive，Logi等各种状态支票的创建，查询，删除，修改； CU，SGR区域的管理；以及项目需要用到的参数管理GDS。
+
+个人主要负责batch中对Incident，Sup，Dive，Logi等特定的批处理操作。web中各种支票的CRUD操作，以及管理参数模块GDS。整个项目由将Struts框架封装后的FWK实现结构上的分层和跳转，数据访问则是借助OJB来实现，前端页面使用客户封装过后的FWK标签库来实现页面样式布局。
