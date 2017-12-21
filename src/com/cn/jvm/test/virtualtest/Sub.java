@@ -47,5 +47,7 @@ public class Sub extends Base {
 		System.out.println("---------------------------------------");
 		Base base = new Sub();
 		base.virtual_show();
+		
+		System.gc();
 	}
 }
